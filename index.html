@@ -80,9 +80,9 @@ img {
 
     <area target="" alt="A Daliás Dromedár fogadó" data-title="A Daliás Dromedár fogadó" href="#tavern" coords="602,557,540,610,535,675,545,724,614,762,672,762,723,725,739,697,757,659,656,564" shape="poly">
 
-  <area target="" alt="Druida kert" data-title="Druida kert" href="#grove" coords="343,331,299,340,261,393,314,429,357,425,390,385,375,349" shape="poly">
+    <area target="" alt="Druida kert" data-title="Druida kert" href="#grove" coords="343,331,299,340,261,393,314,429,357,425,390,385,375,349" shape="poly">
 
-<area target="" alt="Handel szentélye" data-title="Handel szentélye" href="#newchurch" coords="1059,1491,1065,1538,1095,1572,1139,1574,1175,1550,1175,1505,1130,1464,1097,1449" shape="poly">
+    <area target="" alt="Handel szentélye" data-title="Handel szentélye" href="#newchurch" coords="1059,1491,1065,1538,1095,1572,1139,1574,1175,1550,1175,1505,1130,1464,1097,1449" shape="poly">
 
     <area target="" alt="Elhagyatott templom" data-title="Elhagyatott templom" href="#abandonedchurch" coords="1759,49,1560,159,1519,168,1501,197,1655,309,1738,308,1969,121,1866,5,1770,4" shape="poly">
 
@@ -137,9 +137,51 @@ img {
     <p>Megnyugvás a régi isteneket követő lelkeknek. Főleg spirituális és gyógyító szolgálatot tesznek a népnek. </p>
     <button onclick="closePopup()">Vissza</button>
 </div>
+    
+<div id="stables" class="popup">
+    <h3>Istálló</h3>
+    <p>Több karámból álló istálló, mind a földműveléshez és karavánvezetéshez, felfedezéshez használható jószágok tárolására. Hátasokat, szekereket és hozzátartozóit lehet itt vásárolni. </p>
+    <button onclick="closePopup()">Vissza</button>
+</div>
 
+<div id="barracks" class="popup">
+    <h3>Kaszárnya</h3>
+    <p>A helyi őrség központja. Fegyverraktárral, gyakorlótérrel és szálláshellyel van ellátva. </p>
+    <button onclick="closePopup()">Vissza</button>
+</div>
+    
+<div id="warehouse" class="popup">
+    <h3>Raktár</h3>
+    <p>A város legnagyobb raktár komplexuma. Bérelhető, folyamatosan fegyveres védelem alatt áll.  </p>
+    <button onclick="closePopup()">Vissza</button>
+</div>
+    
+<div id="pigeon" class="popup">
+    <h3>Galamb torony</h3>
+    <p>Al-Sanu megosztott galamb tornya. Biztosítja az általános távközlést.  </p>
+    <button onclick="closePopup()">Vissza</button>
+</div>
+
+<div id="grapes" class="popup">
+    <h3>Szőlő ültetvények</h3>
+    <p>A város szélén található szerény szőlőskert. A hegyoldalban termesztett szőlőből készült bort a helyi fogadóban lehet megkóstolni, de nagy része export cikként profitot termel.  </p>
+    <button onclick="closePopup()">Vissza</button>
+</div>
+
+<div id="crops" class="popup">
+    <h3>Termőföldek</h3>
+    <p>Az egyszerű öntözőrendszerrel ellátott csekély földek nem elegendők az egész lakosság ellátására. A termés java része a munkásokat illeti, a maradékot pedig a fogadó használja fel, valamint a vésztartalékokat egészíti ki.   </p>
+    <button onclick="closePopup()">Vissza</button>
+</div>
+
+<div id="crafts" class="popup">
+    <h3>Műhelyek</h3>
+    <p>Kovács, ács, fazekas, kőműves és egyéb kézműves mesterség műhelye zajong ebben a negyedben. </p>
+    <button onclick="closePopup()">Vissza</button>
+</div>
+    
 <script>
-// -------------------- IMAGE MAP SCALING --------------------
+// -------------------- Map scaling --------------------
 function resizeMap() {
     const img = document.getElementById("city-map");
     const map = document.querySelector("map[name='image-map']");
@@ -210,3 +252,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
